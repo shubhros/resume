@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubhro Sinha
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%\definecolor{RED}{HTML}{BF0A30}
+\definecolor{RED}{HTML}{CD143C}
+\definecolor {RED1}{HTML}{ED3929}
+\definecolor{GRAY}{HTML}{828282}
+\definecolor{DOCOLOR}{HTML}{14145c}
+\color{DOCOLOR}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/shubhrosinha/}{\Large {\textcolor{RED}{Shubhro Sinha}}}} & Email : \href{mailto:shubhro22@gmail.com}{shubhro22@gmail.com}\\
+  \href{https://linkedin.com/in/shubhro sinha/}{linkedin.com/in/shubhrosinha} & Mobile : +91-9986619004 \\
+  {Total Experience: 12+ years}&{}
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{\textcolor{RED}{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ionos Networks Inc./IPCore Solutions Pvt. Ltd}{\textcolor{RED1}{Bengaluru, KA}}
+      {Cloud Dataplane Lead/Architect}{\textcolor{GRAY}{Nov 2014 - Present}}
+      \resumeItemListStart
+        \resumeItem{Quantum File Transfer(QFX)}
+          {
+           QFX is a file sync solution that can operate at Gigabit speeds over intercontinental distances. The software is built to scale to 10 million files and 10 terabytes of data. I was responsible for architecture of the dataplane and led a small team of engineers to develop software for 
+           \begin{itemize}
+           \item {Secure file/directory sync}
+           \item {Dynamic path detection and healing}
+           \item {Network resource allocation and management}
+           \item {High speed data transport engine over TCP/IP}
+           \item {End to end congestion control}
+           \item {Network resource allocation and management}
+           \item {Fault tolerance and resiliency}
+           \item {Multicast file transfer}
+           \item {Client apps on MacOS and Linux}
+           \end{itemize}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CSR India Pvt. Ltd}{\textcolor{RED1}{Bengaluru, KA}}
+      {Senior Software Engineer}{\textcolor{GRAY}{Jan 2013 - Nov 2014}}
+      \resumeItemListStart
+        \resumeItem{CSR’s Synergy Wi-Fi Software Stack – A Wi-Fi Soft-Mac solution}
+          {
+	          \begin{itemize}
+    		      \item {802.11ac Wi-Fi driver using mac802.11 Linux stack over PCIe}
+    	    		  \item {Requirement analysis, design and development of Wi-Fi features like scanning, 802.11d and 802.11h}
+          	 \item {Various bug fixes related 802.11 MAC in software Stack}          
+          	\end{itemize}  
+          }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sandvine India Pvt. Ltd.}{\textcolor{RED1}{Bengaluru, KA}}
+      {Sr. Engineer}{\textcolor{GRAY}{May 2012 - Dec 2012}}
+      \resumeItemListStart
+        \resumeItem{Sandvine’s Signaling Controller - A PCRF cum diameter switch}
+          {
+          \begin{itemize}
+          \item {Modification and Enhancement of Linux Virtual Server (LVS) module to support SNAT and DNAT traffic.}
+          \end{itemize}
+          }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Brocade Communications India Pvt. Ltd.}{\textcolor{RED1}{Bengaluru, KA}}
+      {Software Engineer II}{\textcolor{GRAY}{Apr 2011 - May 2012}}
+      \resumeItemListStart
+        \resumeItem{Brocade’s Project Mercury – Brocade’s first chassis based Ethernet Switch}
+      {
+         \begin{itemize}
+          \item Developed a dynamic Kernel Module Tracing Infrastructure to profile various kernel calls.
+          \item Developed a process sandboxing framework to protect system against malicious programs.
+		\end{itemize}
+	}
+		  \resumeItemListEnd
+		
+		 \resumeSubheading
+      {Mindtree Ltd.}{\textcolor{RED1}{Bengaluru, KA}}
+      {Module Lead/Sr. Engineer/Engineer}{\textcolor{GRAY}{Jul 2007 - Apr 2011}}
+      \resumeItemListStart
+        \resumeItem{Embedded Software Practice}
+      {
+         \begin{itemize}
+          \item{Design and Development of SIP based 2-way Video Conferencing feature on Android}
+          \item{DRTL -- Implementation of a deadline aware scheduler, Deadline aware locking, and deadline ware interrupt handling in the linux kernel}
+          \item {Remotification of WiFi driver companion application and driver enhancements for a series of Wi-Fi chipsets}
+          \item {Development of Linux device drivers for Touch screen controllers on Atmel AT91SAM9261/AT91RM9200 platform. (I2C, SPI, GPIO)}
+		\end{itemize}
+		}
+\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%--------TECHNICAL SKILLS------------
+\section{\textcolor{RED}{Technical Skills}}
+\resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Go, C, Scheme}
+      \hfill
+     \textbf{Technologies}{: Linux, TCP/IP, Docker, Electron}
+   }
+    \resumeSubHeadingListEnd
+    
+%--------TECHNICAL Interests------------
+\section{\textcolor{RED}{Technical Interests}}
+\resumeSubHeadingListStart
+    \item{Operating Systems, Networking, Distributed Computing, Cloud Computing, Functional Programming}
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{\textcolor{RED}{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{\textcolor{RED1}{Pilani, India}}
+      {Master of Technology in Software Systems;  CGPA: 8.10}{\textcolor{GRAY}{Jul. 2017 -- Jul. 2019}}
+    \resumeSubheading
+      {Bengal Engineering and Science University, Shipbur (now IIEST, Shibpur)}{\textcolor{RED1}{Howrah, India}}
+      {Bachelor of Engineering in information Technology;  81.2\% }{\textcolor{GRAY}{Aug. 2003 -- July. 2007}}
+      \resumeSubheading
+      {Holy Mission High School}{\textcolor{RED1}{Samastipur, Bihar}}
+      {CBSE - AISSCE(XII); 84\%}{\textcolor{GRAY}{2001}}
+      \resumeSubheading
+      {Central Public School}{\textcolor{RED1}{Samastipur, Bihar}}
+      {CBSE - AISSE(X); 85\%}{\textcolor{GRAY}{1999}}
+  \resumeSubHeadingListEnd
+
+%-----------Publications and Presentations-----------------
+\section{\textcolor{RED}{Publications and Presentations}}
+  \resumeSubHeadingListStart
+    \item {“\textbf{Deployment Specific Real Time Linux}” on 23rd Sep, 2009 at the 1st LinuxCon in Portland, OR, USA}
+    \item  {“\textbf{An Efficient Technique for Enhancing Forensic Capabilities of Ext2 file system}” at the 7th Annual Digital Forensic Research Workshop in Pittsburgh, PA, USA.}
+  \resumeSubHeadingListEnd
+  
+  
+
+%-----------Achievements/Rewards-----------------
+\section{\textcolor{RED}{Achievements/Rewards}}
+  \begin{enumerate}
+    \item {Outstanding performer of the year 2008-09}
+    \item {Half-yearly award 2008}
+    \item{Team Spot award – Dec 2007}
+    \item{Topper in campus learning program conducted by MindTree Ltd}
+    \item{School Topper in AISSCE-2001}
+    \item{Awarded National Scholarship for getting All India Highest in Science in AISSE 1999}  
+    \end{enumerate}
+
+
+%-------------------------------------------
+\end{document}
