@@ -68,12 +68,13 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%\definecolor{RED}{HTML}{BF0A30}
-\definecolor{RED}{HTML}{CD143C}
-\definecolor {RED1}{HTML}{ED3929}
+%\definecolor{violet}{HTML}{BF0A30}
+%\definecolor{violet}{HTML}{CD143C}
+%\definecolor {teal}{HTML}{ED3929}
 \definecolor{GRAY}{HTML}{828282}
 \definecolor{DOCOLOR}{HTML}{14145c}
-\color{DOCOLOR}
+%\color{DOCOLOR}
+\color{black}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,51 +84,66 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.linkedin.com/in/shubhrosinha/}{\Large {\textcolor{RED}{Shubhro Sinha}}}} & Email : \href{mailto:shubhro22@gmail.com}{shubhro22@gmail.com}\\
-  \href{https://linkedin.com/in/shubhro sinha/}{linkedin.com/in/shubhrosinha} & Mobile : +91-9986619004
+  \textbf{\href{https://www.linkedin.com/in/shubhrosinha/}{\Large {\textcolor{teal}{Shubhro Sinha}}}} & Email : \href{mailto:shubhro22@gmail.com}{shubhro22@gmail.com}\\
+  \href{https://linkedin.com/in/shubhrosinha/}{linkedin.com/in/shubhrosinha} &
+  Mobile1 : +91-9986619004\\
+  Bengaluru, Karnataka & Mobile2 : +91-8217460442
 \end{tabular*}
 
 %-----------SUMMARY-----------------
-\section{\textcolor{RED}{Summary}}
+\section{\textcolor{teal}{Summary}}
   \resumeSubHeadingListStart
-  \item []{A technology enthusiast with 12+ years of experience in Networking, DPDK, Cloud and Distributed Computing, Scalable systems, Operating Systems.}
+  \item []{A technology enthusiast with 14+ years of experience in Networking, Operating Systems, Cloud and Distributed systems}
   \resumeSubHeadingListEnd
 
 %--------TECHNICAL SKILLS------------
-\section{\textcolor{RED}{Technical Skills}}
+\section{\textcolor{teal}{Technical Skills}}
 \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Go, C, Scheme}
+      \textbf{Languages}{: Go, C}
       \hfill
-     \textbf{Technologies}{: Linux, DPDK, OVS, TCP/IP, Docker, Electron}
+     \textbf{Technologies}{: Linux, TCP/IP, Docker, DPDK, OVS,  Electron}
    }
     \resumeSubHeadingListEnd
     
 %-----------EXPERIENCE-----------------
-\section{\textcolor{RED}{Experience}}
+\section{\textcolor{teal}{Experience}}
   \resumeSubHeadingListStart
 
+       \resumeSubheading
+      {Nuage Networks From Nokia}{\textcolor{teal}{Bengaluru, KA}}
+      {Senior Technical Specialist}{\textcolor{GRAY}{Jan 2020 - Present}}
+      \resumeItemListStart
+        \resumeItem{Nuage VNS}
+          {
+           Nuage Networks Virtualized Network Services (VNS) delivers SD-WAN 2.0 functionality that allows seamless connection accross branch offices and data centers. I am part of the data-plane team and am instrumental in developing features/applications like
+           \begin{itemize}
+           \item {Forward Error Correction}
+           \item {Seamless forwarding of Non-Ethernet frames over overlay networks}
+           \item {Containerization of Nuage Services Gateway(CPE) to run on public clouds}
+           \item {Encapsulating non-Ethernet frames so that they are passed over the overlay networks}
+           \item {Exploring new technologies like XDP/VPP to replace DPDK}
+           \end{itemize}}
+      \resumeItemListEnd
     \resumeSubheading
-      {Ionos Networks Inc./IPCore Solutions Pvt. Ltd}{\textcolor{RED1}{Bengaluru, KA}}
-      {Cloud Dataplane Lead/Architect}{\textcolor{GRAY}{Nov 2014 - Present}}
+      {Ionos Networks Inc./IPCore Solutions Pvt. Ltd}{\textcolor{teal}{Bengaluru, KA}}
+      {Cloud Dataplane Lead/Architect}{\textcolor{GRAY}{Nov 2014 - Dec 2019}}
       \resumeItemListStart
         \resumeItem{Quantum File Transfer(QFX)}
           {
-           QFX is a file sync solution that can operate at Gigabit speeds over intercontinental distances. The software is built to scale to 10 million files and 10 terabytes of data. I was responsible for architecture of the dataplane and led a small team of engineers to develop software for 
+           QFX is a file/directory sync solution that can operate at Gigabit speeds over intercontinental distances. The software is built to scale to tens of  million files and tens of  terabytes of data. I was responsible for architecture of the data-plane and led a small team of engineers to develop software for
+           
            \begin{itemize}
-           \item {Secure file/directory sync}
-           \item {Dynamic path detection and healing}
-           \item {High speed data transport engine over TCP/IP}
-           \item {End to end congestion control}
-           \item {Network resource allocation and management}
-           \item {Fault tolerance and resiliency}
-           \item {Multicast file transfer}
-           \item {Client apps on MacOS and Linux}
+           \item {Multicast secure file/directory sync using high speed data transport over TCP/IP}
+           \item {Dynamic path detection, healing and Congestion Control}
+           \item {Network resource allocation, management, fault tolerance and resiliency}
+           \item {Client apps on MacOS and Linux to replace CPEs}
+           \item {Develop up a docker based upgrade mechanism to upgrade CPEs}
            \end{itemize}}
       \resumeItemListEnd
 
     \resumeSubheading
-      {CSR India Pvt. Ltd}{\textcolor{RED1}{Bengaluru, KA}}
+      {CSR India Pvt. Ltd}{\textcolor{teal}{Bengaluru, KA}}
       {Senior Software Engineer}{\textcolor{GRAY}{Jan 2013 - Nov 2014}}
       \resumeItemListStart
         \resumeItem{CSR’s Synergy Wi-Fi Software Stack – A Wi-Fi Soft-Mac solution}
@@ -141,7 +157,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Sandvine India Pvt. Ltd.}{\textcolor{RED1}{Bengaluru, KA}}
+      {Sandvine India Pvt. Ltd.}{\textcolor{teal}{Bengaluru, KA}}
       {Sr. Engineer}{\textcolor{GRAY}{May 2012 - Dec 2012}}
       \resumeItemListStart
         \resumeItem{Sandvine’s Signaling Controller - A PCRF cum diameter switch}
@@ -153,7 +169,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Brocade Communications India Pvt. Ltd.}{\textcolor{RED1}{Bengaluru, KA}}
+      {Brocade Communications India Pvt. Ltd.}{\textcolor{teal}{Bengaluru, KA}}
       {Software Engineer II}{\textcolor{GRAY}{Apr 2011 - May 2012}}
       \resumeItemListStart
         \resumeItem{Brocade’s Project Mercury – Brocade’s first chassis based Ethernet Switch}
@@ -166,7 +182,7 @@
 		  \resumeItemListEnd
 		
 		 \resumeSubheading
-      {Mindtree Ltd.}{\textcolor{RED1}{Bengaluru, KA}}
+      {Mindtree Ltd.}{\textcolor{teal}{Bengaluru, KA}}
       {Module Lead/Sr. Engineer/Engineer}{\textcolor{GRAY}{Jul 2007 - Apr 2011}}
       \resumeItemListStart
         \resumeItem{Embedded Software Practice}
@@ -182,30 +198,30 @@
   \resumeSubHeadingListEnd
     
 %--------TECHNICAL Interests------------
-%\section{\textcolor{RED}{Technical Interests}}
+%\section{\textcolor{teal}{Technical Interests}}
 %\resumeSubHeadingListStart
   %  \item{Operating Systems, Networking, Distributed Computing, Cloud Computing, Functional Programming}
   %  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
-\section{\textcolor{RED}{Education}}
+\section{\textcolor{teal}{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Birla Institute of Technology and Science}{\textcolor{RED1}{Pilani, India}}
+      {Birla Institute of Technology and Science}{\textcolor{teal}{Bengaluru, KA}}
       {Master of Technology in Software Systems(Work Integrated Learning Program);  CGPA: 8.10}{\textcolor{GRAY}{Jul. 2017 -- Jul. 2019}}
     \resumeSubheading
-      {Bengal Engineering and Science University, Shipbur (now IIEST, Shibpur)}{\textcolor{RED1}{Howrah, India}}
-      {Bachelor of Engineering in information Technology;  81.2\% }{\textcolor{GRAY}{Aug. 2003 -- July. 2007}}
+      {Bengal Engineering and Science University, Shipbur (now IIEST, Shibpur)}{\textcolor{teal}{Howrah, WB}}
+      {Bachelor of Engineering in Information Technology;  81.2\% }{\textcolor{GRAY}{Aug. 2003 -- July. 2007}}
       \resumeSubheading
-      {Holy Mission High School}{\textcolor{RED1}{Samastipur, Bihar}}
+      {Holy Mission High School}{\textcolor{teal}{Samastipur, BR}}
       {CBSE - AISSCE(XII); 84\%}{\textcolor{GRAY}{2001}}
       \resumeSubheading
-      {Central Public School}{\textcolor{RED1}{Samastipur, Bihar}}
+      {Central Public School}{\textcolor{teal}{Samastipur, BR}}
       {CBSE - AISSE(X); 85\%}{\textcolor{GRAY}{1999}}
   \resumeSubHeadingListEnd
 
 %-----------Publications and Presentations-----------------
-\section{\textcolor{RED}{Publications and Presentations}}
+\section{\textcolor{teal}{Publications and Presentations}}
   \resumeSubHeadingListStart
     \item {“\textbf{Deployment Specific Real Time Linux}” on 23rd Sep, 2009 at the 1st LinuxCon in Portland, OR, USA}
     \item  {“\textbf{An Efficient Technique for Enhancing Forensic Capabilities of Ext2 file system}” at the 7th Annual Digital Forensic Research Workshop in Pittsburgh, PA, USA.}
@@ -214,11 +230,10 @@
   
 
 %-----------Achievements/Rewards-----------------
-\section{\textcolor{RED}{Achievements/Rewards}}
+\section{\textcolor{teal}{Achievements/Rewards}}
   \begin{enumerate}
-    \item {Outstanding performer of the year 2008-09}
-    \item {Half-yearly award 2008}
-    \item{Team Spot award – Dec 2007}
+    \item{Outstanding performer of the year 2008-09}
+    \item{Half-yearly award 2008}
     \item{Topper in campus learning program conducted by MindTree Ltd}
     \item{School Topper in AISSCE-2001}
     \item{Awarded National Scholarship for getting All India Highest in Science in AISSE 1999}  
